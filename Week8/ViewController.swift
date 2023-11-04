@@ -38,34 +38,22 @@ final class ViewController: UIViewController {
         return view
     }()
     
-    
-    
     private lazy var calendarButton: UIButton = {
         let button = UIButton()
-        button.setImage(
-            UIImage(
+        button.setImage(UIImage(
                 systemName: "calendar",
-                withConfiguration: UIImage.SymbolConfiguration(
-                    pointSize: 25
-                )
-            ),
-            for: .normal
-        )
+                withConfiguration: UIImage.SymbolConfiguration(pointSize: 25)
+        ), for: .normal)
         button.tintColor = .grayCustom
         return button
     }()
     
     private lazy var searchButton: UIButton = {
         let button = UIButton()
-        button.setImage(
-            UIImage(
+        button.setImage(UIImage(
                 systemName: "magnifyingglass",
-                withConfiguration: UIImage.SymbolConfiguration(
-                    pointSize: 25
-                )
-            ),
-            for: .normal
-        )
+                withConfiguration: UIImage.SymbolConfiguration(pointSize: 25)
+        ), for: .normal)
         button.tintColor = .grayCustom
         return button
     }()
@@ -142,9 +130,7 @@ final class ViewController: UIViewController {
         let imageView = UIImageView()
         imageView.image = UIImage(
             systemName: "plus.circle",
-            withConfiguration: UIImage.SymbolConfiguration(
-                pointSize: 25
-            )
+            withConfiguration: UIImage.SymbolConfiguration(pointSize: 25)
         )
         imageView.tintColor = .white
         return imageView
@@ -168,17 +154,11 @@ extension ViewController: UITableViewDataSource {
         
         switch indexPath.section {
             case 0:
-                cell.configure(
-                    task: tasks[indexPath.row]
-                )
+                cell.configure(task: tasks[indexPath.row])
             case 1:
-                cell.configure(
-                    task: tasks[indexPath.row + toDoCount]
-                )
+                cell.configure(task: tasks[indexPath.row + toDoCount])
             default:
-                cell.configure(
-                    task: tasks[indexPath.row + completedCount + toDoCount]
-                )
+                cell.configure(task: tasks[indexPath.row + completedCount + toDoCount])
         }
         
         return cell
@@ -215,8 +195,7 @@ extension ViewController: UITableViewDataSource {
         let label = UILabel()
         let tmp = (view.window?.windowScene?.screen.bounds.height ?? 0) * 0.08 * 0.6 + 20
         label.frame = CGRect.init(
-            x: tmp,
-            y: 5,
+            x: tmp, y: 5,
             width: headerView.frame.width - 10,
             height: headerView.frame.height - 10
         )

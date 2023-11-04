@@ -78,22 +78,22 @@ final class MainTableViewCell: UITableViewCell {
         iconButton.backgroundColor = task.icon.0
         iconButton.setImage(UIImage(systemName: task.icon.1), for: .normal)
         
-        var attributedText = NSAttributedString(
+        taskLabel.attributedText = NSAttributedString(
             string: task.title,
             attributes: [:]
         )
-        taskLabel.attributedText = attributedText
         taskLabel.isEnabled = true
+        
         descriptionLabel.text = task.description
         descriptionLabel.isEnabled = true
         
         if task.icon.0 == UIColor.complete || task.icon.0 == UIColor.cancel {
-            attributedText = NSAttributedString(
+            taskLabel.attributedText = NSAttributedString(
                 string: task.title,
                 attributes: [.strikethroughStyle: NSUnderlineStyle.single.rawValue]
             )
-            taskLabel.attributedText = attributedText
             taskLabel.isEnabled = false
+            
             descriptionLabel.isEnabled = false
         }
     }
