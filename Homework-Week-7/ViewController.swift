@@ -14,13 +14,15 @@ final class ViewController: UIViewController {
     private let fontSemibold = "GillSans-SemiBold"
     private let fontBold = "GillSans-Bold"
     
-    private var totalCount = Constants.getTotalCount()
-    private var toDoCount = Constants.getToDoCount()
-    private var completedCount = Constants.getCompletedCount()
-    private var canceledCount = Constants.getCanceledCount()
+    private let appRepository = AppRepository.shared
     
-    private var sections = Constants.sections
-    private var tasks = Constants.tasks
+    private lazy var totalCount = appRepository.getTotalCount()
+    private lazy var toDoCount = appRepository.getToDoCount()
+    private lazy var completedCount = appRepository.getCompletedCount()
+    private lazy var canceledCount = appRepository.getCanceledCount()
+    
+    private lazy var sections = appRepository.sections
+    private lazy var tasks = appRepository.tasks
     
     override func viewDidLoad() {
         super.viewDidLoad()

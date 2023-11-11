@@ -17,13 +17,15 @@
 		F9CC30A62AECB59200B7B02E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9CC30A42AECB59200B7B02E /* LaunchScreen.storyboard */; };
 		F9CC30AF2AECB66800B7B02E /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = F9CC30AE2AECB66800B7B02E /* SnapKit */; };
 		F9CC30B12AECBD2900B7B02E /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CC30B02AECBD2900B7B02E /* MainTableViewCell.swift */; };
-		F9D94DAF2AF1531700BB4940 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D94DAE2AF1531700BB4940 /* Constants.swift */; };
+		F9CF8B472AFF3D1200C03075 /* AppRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CF8B462AFF3D1200C03075 /* AppRepository.swift */; };
+		F9CF8B492AFF3D9000C03075 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CF8B482AFF3D9000C03075 /* UIColor+Extension.swift */; };
+		F9D94DAF2AF1531700BB4940 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D94DAE2AF1531700BB4940 /* Task.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F9882D972AF2A5D200FD8F65 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		F9882D992AF2B54200FD8F65 /* DetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableViewCell.swift; sourceTree = "<group>"; };
-		F9CC30962AECB58F00B7B02E /* Week8.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Week8.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9CC30962AECB58F00B7B02E /* Homework-Week-7.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Homework-Week-7.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9CC30992AECB58F00B7B02E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F9CC309B2AECB58F00B7B02E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		F9CC309D2AECB58F00B7B02E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -32,7 +34,9 @@
 		F9CC30A52AECB59200B7B02E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F9CC30A72AECB59200B7B02E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F9CC30B02AECBD2900B7B02E /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
-		F9D94DAE2AF1531700BB4940 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		F9CF8B462AFF3D1200C03075 /* AppRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRepository.swift; sourceTree = "<group>"; };
+		F9CF8B482AFF3D9000C03075 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		F9D94DAE2AF1531700BB4940 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,7 +54,7 @@
 		F9CC308D2AECB58F00B7B02E = {
 			isa = PBXGroup;
 			children = (
-				F9CC30982AECB58F00B7B02E /* Week8 */,
+				F9CC30982AECB58F00B7B02E /* Homework-Week-7 */,
 				F9CC30972AECB58F00B7B02E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -58,12 +62,12 @@
 		F9CC30972AECB58F00B7B02E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F9CC30962AECB58F00B7B02E /* Week8.app */,
+				F9CC30962AECB58F00B7B02E /* Homework-Week-7.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		F9CC30982AECB58F00B7B02E /* Week8 */ = {
+		F9CC30982AECB58F00B7B02E /* Homework-Week-7 */ = {
 			isa = PBXGroup;
 			children = (
 				F9CC30992AECB58F00B7B02E /* AppDelegate.swift */,
@@ -74,19 +78,21 @@
 				F9CC30A22AECB59200B7B02E /* Assets.xcassets */,
 				F9CC30A42AECB59200B7B02E /* LaunchScreen.storyboard */,
 				F9CC30A72AECB59200B7B02E /* Info.plist */,
-				F9D94DAE2AF1531700BB4940 /* Constants.swift */,
+				F9D94DAE2AF1531700BB4940 /* Task.swift */,
 				F9882D972AF2A5D200FD8F65 /* DetailViewController.swift */,
 				F9882D992AF2B54200FD8F65 /* DetailTableViewCell.swift */,
+				F9CF8B462AFF3D1200C03075 /* AppRepository.swift */,
+				F9CF8B482AFF3D9000C03075 /* UIColor+Extension.swift */,
 			);
-			path = Week8;
+			path = "Homework-Week-7";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F9CC30952AECB58F00B7B02E /* Week8 */ = {
+		F9CC30952AECB58F00B7B02E /* Homework-Week-7 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F9CC30AA2AECB59200B7B02E /* Build configuration list for PBXNativeTarget "Week8" */;
+			buildConfigurationList = F9CC30AA2AECB59200B7B02E /* Build configuration list for PBXNativeTarget "Homework-Week-7" */;
 			buildPhases = (
 				F9CC30922AECB58F00B7B02E /* Sources */,
 				F9CC30932AECB58F00B7B02E /* Frameworks */,
@@ -96,12 +102,12 @@
 			);
 			dependencies = (
 			);
-			name = Week8;
+			name = "Homework-Week-7";
 			packageProductDependencies = (
 				F9CC30AE2AECB66800B7B02E /* SnapKit */,
 			);
 			productName = Week8;
-			productReference = F9CC30962AECB58F00B7B02E /* Week8.app */;
+			productReference = F9CC30962AECB58F00B7B02E /* Homework-Week-7.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -119,7 +125,7 @@
 					};
 				};
 			};
-			buildConfigurationList = F9CC30912AECB58F00B7B02E /* Build configuration list for PBXProject "Week8" */;
+			buildConfigurationList = F9CC30912AECB58F00B7B02E /* Build configuration list for PBXProject "Homework-Week-7" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -135,7 +141,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F9CC30952AECB58F00B7B02E /* Week8 */,
+				F9CC30952AECB58F00B7B02E /* Homework-Week-7 */,
 			);
 		};
 /* End PBXProject section */
@@ -158,13 +164,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F9D94DAF2AF1531700BB4940 /* Constants.swift in Sources */,
+				F9D94DAF2AF1531700BB4940 /* Task.swift in Sources */,
 				F9CC309E2AECB58F00B7B02E /* ViewController.swift in Sources */,
 				F9882D9A2AF2B54200FD8F65 /* DetailTableViewCell.swift in Sources */,
+				F9CF8B492AFF3D9000C03075 /* UIColor+Extension.swift in Sources */,
 				F9CC309A2AECB58F00B7B02E /* AppDelegate.swift in Sources */,
 				F9882D982AF2A5D200FD8F65 /* DetailViewController.swift in Sources */,
 				F9CC30B12AECBD2900B7B02E /* MainTableViewCell.swift in Sources */,
 				F9CC309C2AECB58F00B7B02E /* SceneDelegate.swift in Sources */,
+				F9CF8B472AFF3D1200C03075 /* AppRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,7 +326,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = S7NYSPKT35;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Week8/Info.plist;
+				INFOPLIST_FILE = "Homework-Week-7/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -329,14 +337,14 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = goofeat.Week8;
+				PRODUCT_BUNDLE_IDENTIFIER = "goofeat.Homework-Week-7";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -349,7 +357,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = S7NYSPKT35;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Week8/Info.plist;
+				INFOPLIST_FILE = "Homework-Week-7/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -360,21 +368,21 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = goofeat.Week8;
+				PRODUCT_BUNDLE_IDENTIFIER = "goofeat.Homework-Week-7";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F9CC30912AECB58F00B7B02E /* Build configuration list for PBXProject "Week8" */ = {
+		F9CC30912AECB58F00B7B02E /* Build configuration list for PBXProject "Homework-Week-7" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F9CC30A82AECB59200B7B02E /* Debug */,
@@ -383,7 +391,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F9CC30AA2AECB59200B7B02E /* Build configuration list for PBXNativeTarget "Week8" */ = {
+		F9CC30AA2AECB59200B7B02E /* Build configuration list for PBXNativeTarget "Homework-Week-7" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F9CC30AB2AECB59200B7B02E /* Debug */,
